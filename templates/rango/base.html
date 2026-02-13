@@ -15,21 +15,15 @@
     </div>
 
     <div>
-      <!-- Navigation Links -->
       <ul>
         <li><a href="{% url 'rango:add_category' %}">Add a New Category</a></li>
         <li><a href="{% url 'rango:about' %}">About Rango</a></li>
-        <!-- Add more links here later (e.g., login, register) -->
       </ul>
     </div>
 
     <hr />
 
-    <div>
-      {% block body_block %}
-      <!-- Content from child templates goes here -->
-      {% endblock %}
-    </div>
+    <div>{% block body_block %} {% endblock %}</div>
 
     <hr />
 
